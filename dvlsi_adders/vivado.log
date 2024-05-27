@@ -1,0 +1,370 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 22 21:29:14 2024
+# Process ID: 27312
+# Current directory: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24252 C:\Users\zoege\OneDrive\Documents\ece\8th semester\dvlsi\Lab2\Ex2\dvlsi_adders\dvlsi_adders.xpr
+# Log file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/vivado.log
+# Journal file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 2/dvlsi_adders' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 809.168 ; gain = 166.816
+update_compile_order -fileset sources_1
+close [ open {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd} w ]
+add_files {{C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_4
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+file mkdir {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new}
+close [ open {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd} w ]
+add_files -fileset sim_4 {{C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd}}
+update_compile_order -fileset sim_4
+update_compile_order -fileset sim_4
+current_fileset -simset [ get_filesets sim_4 ]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: bcd_full_adder
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 898.297 ; gain = 73.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bcd_full_adder' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd:15]
+INFO: [Synth 8-3491] module 'full_adder_4_bit' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:34' bound to instance 'u0' of component 'full_adder_4_bit' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'full_adder_4_bit' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:42]
+INFO: [Synth 8-3491] module 'full_adder_str' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:34' bound to instance 'u0' of component 'full_adder_str' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'full_adder_str' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:42]
+INFO: [Synth 8-3491] module 'half_adder_df' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/half_adder_df.vhd:34' bound to instance 'u1' of component 'half_adder_df' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'half_adder_df' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/half_adder_df.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'half_adder_df' (1#1) [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/half_adder_df.vhd:41]
+INFO: [Synth 8-3491] module 'half_adder_df' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/half_adder_df.vhd:34' bound to instance 'u2' of component 'half_adder_df' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'full_adder_str' (2#1) [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:42]
+INFO: [Synth 8-3491] module 'full_adder_str' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:34' bound to instance 'u1' of component 'full_adder_str' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:55]
+INFO: [Synth 8-3491] module 'full_adder_str' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:34' bound to instance 'u2' of component 'full_adder_str' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:56]
+INFO: [Synth 8-3491] module 'full_adder_str' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd:34' bound to instance 'u3' of component 'full_adder_str' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'full_adder_4_bit' (3#1) [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:42]
+INFO: [Synth 8-3491] module 'full_adder_4_bit' declared at 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd:34' bound to instance 'u1' of component 'full_adder_4_bit' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'bcd_full_adder' (4#1) [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 953.223 ; gain = 128.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 953.223 ; gain = 128.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 953.223 ; gain = 128.074
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1271.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1322.289 ; gain = 497.141
+20 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1322.289 ; gain = 497.141
+launch_runs synth_1 -jobs 4
+[Fri Mar 22 22:08:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1322.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_simulation -simset [get_filesets sim_4 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-54] Inspecting design source files for 'bcd_full_adder_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+"xvhdl --incr --relax -prj bcd_full_adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_4_bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder_4_bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/full_adder_str.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder_str'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/half_adder_df.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'half_adder_df'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d7c24eb35f694564b817293cfc0c6320 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot bcd_full_adder_tb_behav xil_defaultlib.bcd_full_adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.half_adder_df [half_adder_df_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_str [full_adder_str_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_4_bit [full_adder_4_bit_default]
+Compiling architecture structural of entity xil_defaultlib.bcd_full_adder [bcd_full_adder_default]
+Compiling architecture behavior of entity xil_defaultlib.bcd_full_adder_tb
+Built simulation snapshot bcd_full_adder_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/zoege/OneDrive/Documents/ece/8th -notrace
+couldn't read file "C:/Users/zoege/OneDrive/Documents/ece/8th": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 22 22:10:17 2024...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1856.207 ; gain = 0.113
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bcd_full_adder_tb_behav -key {Behavioral:sim_4:Functional:bcd_full_adder_tb} -tclbatch {bcd_full_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source bcd_full_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bcd_full_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1949.059 ; gain = 391.598
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_4 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-54] Inspecting design source files for 'bcd_full_adder_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+"xvhdl --incr --relax -prj bcd_full_adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d7c24eb35f694564b817293cfc0c6320 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot bcd_full_adder_tb_behav xil_defaultlib.bcd_full_adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.half_adder_df [half_adder_df_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_str [full_adder_str_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_4_bit [full_adder_4_bit_default]
+Compiling architecture structural of entity xil_defaultlib.bcd_full_adder [bcd_full_adder_default]
+Compiling architecture behavior of entity xil_defaultlib.bcd_full_adder_tb
+Built simulation snapshot bcd_full_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bcd_full_adder_tb_behav -key {Behavioral:sim_4:Functional:bcd_full_adder_tb} -tclbatch {bcd_full_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source bcd_full_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bcd_full_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2208.980 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_4 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-54] Inspecting design source files for 'bcd_full_adder_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+"xvhdl --incr --relax -prj bcd_full_adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder_tb'
+ERROR: [VRFC 10-3167] cannot convert type 'integer' to type 'std_logic' [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd:36]
+ERROR: [VRFC 10-3782] unit 'behavior' ignored due to previous errors [C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd:8]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset [get_filesets sim_4 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-54] Inspecting design source files for 'bcd_full_adder_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+"xvhdl --incr --relax -prj bcd_full_adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d7c24eb35f694564b817293cfc0c6320 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot bcd_full_adder_tb_behav xil_defaultlib.bcd_full_adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.half_adder_df [half_adder_df_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_str [full_adder_str_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_4_bit [full_adder_4_bit_default]
+Compiling architecture structural of entity xil_defaultlib.bcd_full_adder [bcd_full_adder_default]
+Compiling architecture behavior of entity xil_defaultlib.bcd_full_adder_tb
+Built simulation snapshot bcd_full_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bcd_full_adder_tb_behav -key {Behavioral:sim_4:Functional:bcd_full_adder_tb} -tclbatch {bcd_full_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source bcd_full_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2208.980 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bcd_full_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2208.980 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_4 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-54] Inspecting design source files for 'bcd_full_adder_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+"xvhdl --incr --relax -prj bcd_full_adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bcd_full_adder_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto d7c24eb35f694564b817293cfc0c6320 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot bcd_full_adder_tb_behav xil_defaultlib.bcd_full_adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture dataflow of entity xil_defaultlib.half_adder_df [half_adder_df_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_str [full_adder_str_default]
+Compiling architecture structural of entity xil_defaultlib.full_adder_4_bit [full_adder_4_bit_default]
+Compiling architecture structural of entity xil_defaultlib.bcd_full_adder [bcd_full_adder_default]
+Compiling architecture behavior of entity xil_defaultlib.bcd_full_adder_tb
+Built simulation snapshot bcd_full_adder_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.sim/sim_4/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "bcd_full_adder_tb_behav -key {Behavioral:sim_4:Functional:bcd_full_adder_tb} -tclbatch {bcd_full_adder_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source bcd_full_adder_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'bcd_full_adder_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2208.980 ; gain = 0.000

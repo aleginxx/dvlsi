@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar 22 21:29:14 2024
+# Process ID: 27312
+# Current directory: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24252 C:\Users\zoege\OneDrive\Documents\ece\8th semester\dvlsi\Lab2\Ex2\dvlsi_adders\dvlsi_adders.xpr
+# Log file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/vivado.log
+# Journal file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd} w ]
+add_files {{C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sources_1/new/bcd_full_adder.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_4
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+file mkdir {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new}
+close [ open {C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd} w ]
+add_files -fileset sim_4 {{C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab2/Ex2/dvlsi_adders/dvlsi_adders.srcs/sim_4/new/bcd_full_adder_tb.vhd}}
+update_compile_order -fileset sim_4
+update_compile_order -fileset sim_4
+current_fileset -simset [ get_filesets sim_4 ]
+synth_design -rtl -name rtl_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_simulation -simset [get_filesets sim_4 ]
+source bcd_full_adder_tb.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_4 ]
+source bcd_full_adder_tb.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_4 ]
+launch_simulation -simset [get_filesets sim_4 ]
+source bcd_full_adder_tb.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_4 ]
+source bcd_full_adder_tb.tcl
