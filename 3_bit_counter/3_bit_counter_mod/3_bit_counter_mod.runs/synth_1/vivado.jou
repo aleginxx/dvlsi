@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 14 17:50:04 2024
+# Process ID: 26556
+# Current directory: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab1/ExB3/3_bit_counter_mod/3_bit_counter_mod.runs/synth_1
+# Command line: vivado.exe -log count3_mod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source count3_mod.tcl
+# Log file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab1/ExB3/3_bit_counter_mod/3_bit_counter_mod.runs/synth_1/count3_mod.vds
+# Journal file: C:/Users/zoege/OneDrive/Documents/ece/8th semester/dvlsi/Lab1/ExB3/3_bit_counter_mod/3_bit_counter_mod.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source count3_mod.tcl -notrace

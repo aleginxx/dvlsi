@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1710427444">
+  <File Type="OPT-HWDEF" Name="lshift_reg3.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lshift_reg3_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="lshift_reg3.dcp"/>
+  <File Type="BITSTR-BMM" Name="lshift_reg3_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="lshift_reg3_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lshift_reg3.tcl"/>
+  <File Type="REPORTS-TCL" Name="lshift_reg3_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="lshift_reg3_power_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="lshift_reg3_opt.dcp"/>
+  <File Type="OPT-DRC" Name="lshift_reg3_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="lshift_reg3_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="lshift_reg3_placed.dcp"/>
+  <File Type="PLACE-IO" Name="lshift_reg3_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lshift_reg3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lshift_reg3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lshift_reg3_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lshift_reg3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lshift_reg3_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="lshift_reg3.bin"/>
+  <File Type="PHYSOPT-DCP" Name="lshift_reg3_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="lshift_reg3.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lshift_reg3_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="lshift_reg3_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lshift_reg3_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="lshift_reg3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lshift_reg3_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="lshift_reg3.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="lshift_reg3_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="lshift_reg3.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lshift_reg3_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lshift_reg3_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="lshift_reg3.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lshift_reg3_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lshift_reg3_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lshift_reg3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lshift_reg3_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lshift_reg3_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lshift_reg3_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lshift_reg3_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="lshift_reg3.vdi"/>
+  <File Type="ROUTE-CLK" Name="lshift_reg3_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lshift_reg3_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lshift_reg3_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lshift_reg3_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lshift_reg3_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="lshift_reg3.bit"/>
+  <File Type="BITSTR-RBT" Name="lshift_reg3.rbt"/>
+  <File Type="BITSTR-NKY" Name="lshift_reg3.nky"/>
+  <File Type="BG-BGN" Name="lshift_reg3.bgn"/>
+  <File Type="BG-DRC" Name="lshift_reg3.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/lshift_sreg_bh.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lshift_reg3"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,7 @@
+Running: xsim.dir/lshift_reg3_tb_behav/xsimk.exe -simmode gui -wdb lshift_reg3_tb_behav.wdb -simrunnum 0 -socket 64648
+Design successfully loaded
+Design Loading Memory Usage: 6660 KB (Peak: 6660 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7204 KB (Peak: 7204 KB)
+Simulation CPU Usage: 0 ms
