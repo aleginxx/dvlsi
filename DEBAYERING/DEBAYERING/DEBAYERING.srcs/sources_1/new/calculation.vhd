@@ -1,0 +1,86 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+
+entity calculation is
+    generic (N: integer := 8);
+    Port (
+          clock : in std_logic;
+          reset : in std_logic;
+          p00 : in std_logic_vector(7 downto 0);
+          p01 : in std_logic_vector(7 downto 0);
+          p02 : in std_logic_vector(7 downto 0);
+          p10 : in std_logic_vector(7 downto 0);
+          p11 : in std_logic_vector(7 downto 0);
+          p12 : in std_logic_vector(7 downto 0);
+          p20 : in std_logic_vector(7 downto 0);
+          p21 : in std_logic_vector(7 downto 0);
+          p22 : in std_logic_vector(7 downto 0);
+          pline : in std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0);
+          pcolumn : in std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0);
+          R : out std_logic_vector(7 downto 0);
+          G : out std_logic_vector(7 downto 0);
+          B : out std_logic_vector(7 downto 0)
+          );
+end calculation;
+
+architecture Behavioral of calculation is
+
+    signal x, up, down, left, right, upleft, upright, downleft, downright : std_logic_vector(7 downto 0);
+    signal sum_row, sum_column, sum_cross, sum_outer : std_logic_vector(7 downto 0);
+    signal temp0, temp1 : std_logic_vector(9 downto 0);
+    signal temp2, temp3 : std_logic_vector(8 downto 0);
+
+    begin
+    
+    upleft <= p22 when to_integer(unsigned(pline)) /= 0 and to_integer(unsigned(pcolumn)) /= 0 else (others => '0');
+    up <= p21 when to_integer(unsigned(pline)) /= 0 else (others => '0');
+    upright <= p20 when to_integer(unsigned(pline)) /= 0 and to_integer(unsigned(pcolumn)) /= N-1 else (others => '0');
+    left <= p12 when to_integer(unsigned(pcolumn)) /= 0 else (others => '0');
+    x <= p11;
+    right <= p10 when to_integer(unsigned(pcolumn)) /= N-1 else (others => '0');
+    downleft <= p02 when to_integer(unsigned(pline)) /= N-1 and to_integer(unsigned(pcolumn)) /= 0 else (others => '0');
+    down <= p01 when to_integer(unsigned(pline)) /= N-1 else (others => '0');
+    downright <= p00 when to_integer(unsigned(pline)) /= N-1 and to_integer(unsigned(pcolumn)) /= N-1 else (others => '0');    
+
+    temp0 <= ("00" & left) + ("00" & right) + ("00" & up) + ("00" & down);
+    sum_cross <= temp0(9 downto 2);
+    
+    temp1 <= ("00" & upleft) + ("00" & upright) + ("00" & downleft) + ("00" & downright);
+    sum_outer <= temp1(9 downto 2);
+    
+    temp2 <= ('0' & up) + ('0' & down);
+    sum_column <= temp2(8 downto 1);
+    
+    temp3 <= ('0' & left) + ('0' & right);
+    sum_row <= temp3(8 downto 1);
+    
+    process(clock, reset)
+    begin
+        if reset = '1' then
+            --??
+        elsif (clock'event and clock = '1') then
+            if pline(0) = '0' and pcolumn(0) ='0' then      -- periptwsh (ii)
+                R <= sum_column;
+                G <= x;
+                B <= sum_row;
+            elsif pline(0) = '0' and pcolumn(0) = '1' then  --periptwsh (iv)
+                R <= sum_outer;
+                G <= sum_cross;
+                B <= x;
+            elsif pline(0) = '1' and pcolumn(0) = '0' then  --periptwsh (iii)
+                R <= x;
+                G <= sum_cross;
+                B <= sum_outer;
+            elsif pline(0) = '1' and pcolumn(0) = '1' then  --periptwsh (i)
+                R <= sum_row;
+                G <= x;
+                B <= sum_column;
+            end if;
+        end if;
+    end process;
+    
+end Behavioral;

@@ -1,0 +1,144 @@
+s2p
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+entity s2p is
+    generic (N: integer := 16);
+    Port (
+            clock : in std_logic;
+            reset : in std_logic;
+            pixel : in std_logic_vector(7 downto 0);
+            valid_in : in std_logic;
+            p00 : out std_logic_vector(7 downto 0); 
+            p01 : out std_logic_vector(7 downto 0);
+            p02 : out std_logic_vector(7 downto 0);
+            p10 : out std_logic_vector(7 downto 0);
+            p11 : out std_logic_vector(7 downto 0);
+            p12 : out std_logic_vector(7 downto 0);
+            p20 : out std_logic_vector(7 downto 0);
+            p21 : out std_logic_vector(7 downto 0);
+            p22 : out std_logic_vector(7 downto 0);
+            valid_out : out std_logic 
+     );
+end s2p;
+
+architecture Behavioral of s2p is
+
+    component fifo_generator_0
+    Port(
+        clk : in std_logic;
+        srst : in std_logic;
+        din : in std_logic_vector(7 downto 0);
+        wr_en : in std_logic;
+        rd_en : in std_logic;
+        dout : out std_logic_vector(7 downto 0);
+        full : out std_logic;
+        empty : out std_logic;
+        valid : out std_logic;
+        data_count : out std_logic_vector(3 downto 0)
+        );
+    end component;
+    
+    signal fout2, fout1, fout0 : std_logic_vector(7 downto 0) :=  (others => '0') ;
+    signal full0, full1, full2, empty0, empty1, empty2, valid0, valid1, valid2 : std_logic;
+    signal datacount0, datacount1, datacount2 : std_logic_vector(3 downto 0);
+    signal counter : std_logic_vector(integer(ceil(log2(real(N*N)))) downto 0) :=  (others => '0') ;
+
+
+    signal  rd_en0: std_logic := '0';
+    signal  rd_en1: std_logic := '0';
+    signal  rd_en2: std_logic := '0';
+    signal  wr_en0: std_logic := '1';
+    signal  wr_en1: std_logic := '1';
+    signal  wr_en2: std_logic := '1';
+    
+    type arr is array (2 downto 0) of std_logic_vector (7 downto 0);
+    signal line0 : arr := (others => (others => '0'));
+    signal line1 : arr := (others => (others => '0'));
+    signal line2 : arr := (others => (others => '0'));
+    
+begin
+
+    RAM_FIFO_0 : fifo_generator_0
+    PORT MAP (
+        clk => clock,
+        srst => reset,
+        din => pixel,
+        wr_en => wr_en0,
+        rd_en => rd_en0,
+        dout => fout0,
+        full => full0,
+        empty => empty0,
+        valid => valid0,
+        data_count => datacount0
+    );
+    
+    RAM_FIFO_1 : fifo_generator_0
+    PORT MAP (
+        clk => clock,
+        srst => reset,
+        din => fout0,
+        wr_en => wr_en1,
+        rd_en => rd_en1,
+        dout => fout1,
+        full => full1,
+        empty => empty1,
+        valid => valid1,
+        data_count => datacount1
+    );
+    
+    RAM_FIFO_2 : fifo_generator_0
+    PORT MAP (
+        clk => clock,
+        srst => reset,
+        din => fout1,
+        wr_en => wr_en2,
+        rd_en => rd_en2,
+        dout => fout2,
+        full => full2,
+        empty => empty2,
+        valid => valid2,
+        data_count => datacount2
+    );
+    
+    process(clock, reset, datacount0)
+    begin
+        if reset = '1' then
+            rd_en0 <= '0';
+            rd_en1 <= '0';
+            rd_en2 <= '0';
+            valid_out <= '0';
+            counter <= (others => '0');
+        elsif (clock'event and clock = '1') then
+            if valid_in = '1' then
+                counter <= counter + 1;
+                if to_integer(unsigned(counter)) = 2*N+3 then
+                    valid_out <= '1';
+                end if;
+                if to_integer(unsigned(datacount0)) = N-2 then
+                    rd_en0 <= '1';
+                    rd_en1 <= '1';
+                    rd_en2 <= '1';
+                end if;
+                line0 <= line0(1 downto 0) & fout0;
+                line1 <= line1(1 downto 0) & fout1;
+                line2 <= line2(1 downto 0) & fout2;
+                p00 <= line0(0);
+                p01 <= line0(1);
+                p02 <= line0(2);
+                p10 <= line1(0);
+                p11 <= line1(1);
+                p12 <= line1(2);
+                p20 <= line2(0);
+                p21 <= line2(1);
+                p22 <= line2(2);
+            end if;
+        end if;
+    end process;
+                        
+    
+end Behavioral;

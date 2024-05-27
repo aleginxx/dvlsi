@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../DEBAYERING.srcs/sources_1/new/calculation.vhd" \
+"../../../../DEBAYERING.srcs/sources_1/new/controller.vhd" \
+"../../../../DEBAYERING.srcs/sources_1/new/debayering.vhd" \
+"../../../../DEBAYERING.srcs/sources_1/new/s2p.vhd" \
+"../../../../DEBAYERING.srcs/sim_4/new/debayering_tb.vhd" \
+
+# Do not sort compile order
+nosort

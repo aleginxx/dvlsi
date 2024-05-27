@@ -1,0 +1,61 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+
+entity controller is
+    generic (N: integer := 8);
+    Port (
+          clock : in std_logic;
+          reset : in std_logic;
+          new_image : in std_logic;
+          start_debaying : in std_logic;
+          pline : out std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0);
+          pcolumn : out std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0);
+          valid_out : out std_logic;
+          image_finished : out std_logic
+          );
+end controller;
+
+architecture Behavioral of controller is
+
+    signal column_temp, line_temp : std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0) := (others => '0');
+    signal image_finished_temp : std_logic := '0';
+
+begin
+
+    pcolumn <= column_temp;
+    pline <= line_temp;
+    
+    process(clock, reset)
+    begin
+        if reset = '1' then
+            line_temp <= (others => '0');
+            column_temp <= (others => '0');
+            valid_out <= '0';
+        elsif (clock'event and clock = '1') then
+            valid_out <= '0';
+            if start_debaying = '1' then
+                valid_out <= '1';
+                column_temp <= column_temp + 1;
+                if to_integer(unsigned(column_temp)) = N-1 then
+                    line_temp <= line_temp + 1;
+                end if;
+            end if;
+            if (image_finished_temp = '1') then
+                valid_out <= '0';
+                image_finished_temp <= '0';
+
+            end if;
+            if (to_integer(unsigned(line_temp)) = N-1 and to_integer(unsigned(column_temp)) = N-1) then
+                image_finished <= '1';
+                image_finished_temp <= '1';
+            else 
+                image_finished <= '0';
+            end if;
+        end if;
+    end process;
+
+
+end Behavioral;

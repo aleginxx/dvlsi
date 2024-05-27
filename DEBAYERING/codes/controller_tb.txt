@@ -1,0 +1,65 @@
+controller_tb
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_unsigned.all;
+
+entity controller_tb is
+end controller_tb;
+
+architecture Behavioral of controller_tb is
+
+    component controller is
+    Port (
+          clock : in std_logic;
+          reset : in std_logic;
+          new_image : in std_logic;
+          start_debaying : in std_logic;
+          pline : out std_logic_vector(1 downto 0);
+          pcolumn : out std_logic_vector(1 downto 0);
+          valid_out : out std_logic;
+          image_finished : out std_logic
+          );
+    end component;
+    
+    signal clock_tb : std_logic := '0';
+    signal reset_tb : std_logic := '0';
+    signal start_debaying_tb : std_logic := '0';
+    signal new_image_tb : std_logic := '0';
+    
+    signal pline_tb : std_logic_vector(1 downto 0);
+    signal pcolumn_tb : std_logic_vector(1 downto 0);
+    signal valid_out_tb : std_logic;
+    signal image_finished_tb : std_logic;
+    
+    constant clock_period : time := 10ns;
+
+begin 
+    dut: controller port map(
+        clock => clock_tb,
+        reset => reset_tb,
+        start_debaying => start_debaying_tb,
+        new_image => new_image_tb,
+        pline => pline_tb,
+        pcolumn => pcolumn_tb,
+        valid_out => valid_out_tb,
+        image_finished => image_finished_tb
+        );
+        
+    clock_process : process
+    begin
+        clock_tb <= '0';
+        wait for clock_period/2;
+        clock_tb <= '1';
+        wait for clock_period/2;
+    end process;
+    
+    testbench : process
+        begin
+            wait for clock_period/2;
+            start_debaying_tb <= '1';
+            wait for 20*clock_period;
+            
+            wait;
+            end process;   
+end Behavioral;
