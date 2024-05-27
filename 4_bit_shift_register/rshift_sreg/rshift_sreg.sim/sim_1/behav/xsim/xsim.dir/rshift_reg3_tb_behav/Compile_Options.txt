@@ -1,0 +1,1 @@
+-wto "4778c7ce3aaf4f0ca6057977b08ef69a" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "rshift_reg3_tb_behav" "xil_defaultlib.rshift_reg3_tb" -log "elaborate.log" 
