@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Tue Apr 30 15:34:37 2024
+# Process ID: 19436
+# Current directory: C:/Users/Zoe/OneDrive/Documents/ece/8thsemester/dvlsi/Lab6/dvlsi2021_lab5/dvlsi2021_ask5_prj/dvlsi2021_ask5_prj.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Zoe/OneDrive/Documents/ece/8thsemester/dvlsi/Lab6/dvlsi2021_lab5/dvlsi2021_ask5_prj/dvlsi2021_ask5_prj.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Zoe/OneDrive/Documents/ece/8thsemester/dvlsi/Lab6/dvlsi2021_lab5/dvlsi2021_ask5_prj/dvlsi2021_ask5_prj.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
