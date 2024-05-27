@@ -1,0 +1,1007 @@
+13:59:04 **** Build of project FIR_ZYBO_SDK_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:02:03 **** Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:07:40 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:09:00 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:10:05 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:25:13: error: conflicting types for 'B'
+     int32_t B,A;
+             ^
+../src/helloworld.c:23:56: note: previous declaration of 'B' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                                        ^
+../src/helloworld.c:25:15: error: conflicting types for 'A'
+     int32_t B,A;
+               ^
+../src/helloworld.c:23:20: note: previous declaration of 'A' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                    ^
+../src/helloworld.c:26:13: error: conflicting types for 'y'
+     int32_t y;
+             ^
+../src/helloworld.c:23:30: note: previous declaration of 'y' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                              ^
+../src/helloworld.c:28:9: error: conflicting types for 'valid_out'
+     int valid_out;
+         ^~~~~~~~~
+../src/helloworld.c:23:46: note: previous declaration of 'valid_out' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                              ^~~~~~~~~
+../src/helloworld.c:30:9: error: conflicting types for 'rst'
+     int rst, valid_in, data_in;
+         ^~~
+../src/helloworld.c:23:42: note: previous declaration of 'rst' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                          ^~~
+../src/helloworld.c:30:14: error: conflicting types for 'valid_in'
+     int rst, valid_in, data_in;
+              ^~~~~~~~
+../src/helloworld.c:23:32: note: previous declaration of 'valid_in' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                ^~~~~~~~
+../src/helloworld.c:30:24: error: conflicting types for 'data_in'
+     int rst, valid_in, data_in;
+                        ^~~~~~~
+../src/helloworld.c:23:22: note: previous declaration of 'data_in' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                      ^~~~~~~
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:10:32 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:28:9: error: conflicting types for 'valid_out'
+     int valid_out;
+         ^~~~~~~~~
+../src/helloworld.c:23:46: note: previous declaration of 'valid_out' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                              ^~~~~~~~~
+../src/helloworld.c:30:9: error: conflicting types for 'rst'
+     int rst, valid_in, data_in;
+         ^~~
+../src/helloworld.c:23:42: note: previous declaration of 'rst' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                          ^~~
+../src/helloworld.c:30:14: error: conflicting types for 'valid_in'
+     int rst, valid_in, data_in;
+              ^~~~~~~~
+../src/helloworld.c:23:32: note: previous declaration of 'valid_in' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                                ^~~~~~~~
+../src/helloworld.c:30:24: error: conflicting types for 'data_in'
+     int rst, valid_in, data_in;
+                        ^~~~~~~
+../src/helloworld.c:23:22: note: previous declaration of 'data_in' was here
+       unsigned int A,data_in,y,valid_in ,rst,valid_out,B;
+                      ^~~~~~~
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:11:08 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:11:32 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:13:04 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:14:31 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:15:43 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:23:18 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:26:37 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:28:13 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:18:24: error: invalid suffix "_0000" on integer constant
+ #define MY_IP_BASEADDR 0x43C0_0000
+                        ^
+../src/helloworld.c:56:20: note: in expansion of macro 'MY_IP_BASEADDR'
+         Xil_Out32((MY_IP_BASEADDR+0x00), A); //write to FIR to reg0
+                    ^~~~~~~~~~~~~~
+../src/helloworld.c:18:24: error: invalid suffix "_0000" on integer constant
+ #define MY_IP_BASEADDR 0x43C0_0000
+                        ^
+../src/helloworld.c:60:31: note: in expansion of macro 'MY_IP_BASEADDR'
+                  B = Xil_In32(MY_IP_BASEADDR+0x04);
+                               ^~~~~~~~~~~~~~
+../src/helloworld.c:18:24: error: invalid suffix "_0000" on integer constant
+ #define MY_IP_BASEADDR 0x43C0_0000
+                        ^
+../src/helloworld.c:66:29: note: in expansion of macro 'MY_IP_BASEADDR'
+                B = Xil_In32(MY_IP_BASEADDR+0x04);
+                             ^~~~~~~~~~~~~~
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:28:24 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:27:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:27:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:28:58 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:29:18: warning: unused variable 'A_print' [-Wunused-variable]
+     int B_print, A_print;
+                  ^~~~~~~
+../src/helloworld.c:29:9: warning: unused variable 'B_print' [-Wunused-variable]
+     int B_print, A_print;
+         ^~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102412	   2576	  23328	 128316	  1f53c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:29:05 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102412	   2576	  23328	 128316	  1f53c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:29:31 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:31:47 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:9:10: fatal error: xgpio.h: No such file or directory
+ #include <xgpio.h>
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:35:05 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:52:3: error: 'RST' undeclared (first use in this function)
+   RST =rst;
+   ^~~
+../src/helloworld.c:52:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+14:35:17 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102348	   2576	  23328	 128252	  1f4fc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:35:37 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:53:05 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:53:42 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102300	   2576	  23328	 128204	  1f4cc	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:54:06 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:58:16 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:58:37 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:59:12 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:01:30 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102428	   2576	  23328	 128332	  1f54c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:02:22 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102428	   2576	  23328	 128332	  1f54c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:02:50 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:04:13 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:07:40 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:08:08 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:12:46 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:14:10 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:14:32 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:15:13 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102420	   2576	  23328	 128324	  1f544	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:15:37 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:16:05 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102428	   2576	  23328	 128332	  1f54c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:16:42 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102444	   2576	  23328	 128348	  1f55c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:16:59 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:17:37 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102444	   2576	  23328	 128348	  1f55c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:17:42 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:23:40 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102468	   2576	  23328	 128372	  1f574	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:23:52 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:26:05 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102468	   2576	  23328	 128372	  1f574	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:26:33 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:28:59 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102340	   2576	  23328	 128244	  1f4f4	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:30:34 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:39:11 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102468	   2576	  23328	 128372	  1f574	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:39:17 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:41:49 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:41:56 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:47:49 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:48:19 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:52:38 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:53:00 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:53:30 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:39:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int32_t * {aka long int *}' [-Wformat=]
+   scanf("%d",&data_in);
+          ~^  ~~~~~~~~
+          %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:53:55 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:55:55 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:39:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int32_t * {aka long int *}' [-Wformat=]
+   scanf("%d",&data_in);
+          ~^  ~~~~~~~~
+          %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+15:56:10 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+14:49:56 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+10:15:58 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:01:06 **** Incremental Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:28:53 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '

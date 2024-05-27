@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../lab4_solved2.srcs/sources_1/new/control_unit.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/dff.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/dff2.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/dff_big.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/fir.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/mac.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/mlab_ram.vhd" \
+"../../../../lab4_solved2.srcs/sources_1/new/mlab_rom.vhd" \
+
+# Do not sort compile order
+nosort

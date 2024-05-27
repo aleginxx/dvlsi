@@ -1,0 +1,23 @@
+15:28:53 **** Auto Build of configuration Debug for project FIR_ZYBO_SDK ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FIR_ZYBO_SDK.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FIR_ZYBO_SDK_bsp/ps7_cortexa9_0/lib -o "FIR_ZYBO_SDK.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FIR_ZYBO_SDK.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FIR_ZYBO_SDK.elf  |tee "FIR_ZYBO_SDK.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 102460	   2576	  23328	 128364	  1f56c	FIR_ZYBO_SDK.elf
+'Finished building: FIR_ZYBO_SDK.elf.size'
+' '
+
+15:28:59 Build Finished (took 5s.456ms)
+

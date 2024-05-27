@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr 23 14:48:14 2024
+# Process ID: 2688
+# Current directory: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab/ZYBO_FIR/ZYBO_FIR.runs/synth_1
+# Command line: vivado.exe -log FIR_IP_v1_0_S00_AXI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIR_IP_v1_0_S00_AXI.tcl
+# Log file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab/ZYBO_FIR/ZYBO_FIR.runs/synth_1/FIR_IP_v1_0_S00_AXI.vds
+# Journal file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab/ZYBO_FIR/ZYBO_FIR.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_IP_v1_0_S00_AXI.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 321.148 ; gain = 60.270
+Command: synth_design -top FIR_IP_v1_0_S00_AXI -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4548 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 431.547 ; gain = 97.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_IP_v1_0_S00_AXI' [C:/Users/Gina/Downloads/FIR_IP.vhdl:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Gina/Downloads/FIR_IP.vhdl:256]
+INFO: [Synth 8-226] default block is never used [C:/Users/Gina/Downloads/FIR_IP.vhdl:389]
+INFO: [Synth 8-3491] module 'FIR' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:324' bound to instance 'FIR_bb' of component 'FIR' [C:/Users/Gina/Downloads/FIR_IP.vhdl:431]
+INFO: [Synth 8-638] synthesizing module 'FIR' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:339]
+INFO: [Synth 8-3491] module 'dff_big' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:22' bound to instance 'x_reg' of component 'dff_big' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:422]
+INFO: [Synth 8-638] synthesizing module 'dff_big' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:29]
+INFO: [Synth 8-256] done synthesizing module 'dff_big' (1#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:29]
+INFO: [Synth 8-3491] module 'Control_Unit' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:180' bound to instance 'control' of component 'Control_Unit' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:423]
+INFO: [Synth 8-638] synthesizing module 'Control_Unit' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:193]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_Correct.vhdl:215]
+INFO: [Synth 8-3491] module 'dff2' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:47' bound to instance 'valid_out_deff1' of component 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:269]
+INFO: [Synth 8-638] synthesizing module 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:56]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:7' bound to instance 'delay3' of component 'dff' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:68]
+INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:86]
+INFO: [Synth 8-256] done synthesizing module 'dff' (2#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:86]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:7' bound to instance 'delay4' of component 'dff' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:75]
+INFO: [Synth 8-256] done synthesizing module 'dff2' (3#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:56]
+INFO: [Synth 8-3491] module 'dff2' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:47' bound to instance 'valid_out_deff2' of component 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:270]
+INFO: [Synth 8-3491] module 'dff2' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:47' bound to instance 'valid_out_deff3' of component 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:271]
+INFO: [Synth 8-3491] module 'dff2' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:47' bound to instance 'valid_out_deff4' of component 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:272]
+INFO: [Synth 8-256] done synthesizing module 'Control_Unit' (4#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:193]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:7' bound to instance 'mac_init_reg' of component 'dff' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:425]
+INFO: [Synth 8-3491] module 'dff2' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:47' bound to instance 'valid_out_reg' of component 'dff2' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:426]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:104' bound to instance 'rom' of component 'mlab_rom' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:427]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:114]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom' (5#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:114]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:137' bound to instance 'ram' of component 'mlab_ram' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:428]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:150]
+	Parameter data_width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_Correct.vhdl:154]
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram' (6#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:150]
+INFO: [Synth 8-3491] module 'MAC' declared at 'C:/Users/Gina/Downloads/FIR_Correct.vhdl:283' bound to instance 'macc' of component 'MAC' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:429]
+INFO: [Synth 8-638] synthesizing module 'MAC' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:293]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_Correct.vhdl:297]
+INFO: [Synth 8-256] done synthesizing module 'MAC' (7#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:293]
+INFO: [Synth 8-256] done synthesizing module 'FIR' (8#1) [C:/Users/Gina/Downloads/FIR_Correct.vhdl:339]
+WARNING: [Synth 8-614] signal 'slv_reg0' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_IP.vhdl:451]
+WARNING: [Synth 8-614] signal 'A_ip' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_IP.vhdl:451]
+WARNING: [Synth 8-614] signal 'valid_out_ip' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_IP.vhdl:451]
+WARNING: [Synth 8-614] signal 'y_ip' is read in the process but is not in the sensitivity list [C:/Users/Gina/Downloads/FIR_IP.vhdl:451]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [C:/Users/Gina/Downloads/FIR_IP.vhdl:254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'A_ip_reg' and it is trimmed from '32' to '10' bits. [C:/Users/Gina/Downloads/FIR_IP.vhdl:456]
+INFO: [Synth 8-256] done synthesizing module 'FIR_IP_v1_0_S00_AXI' (9#1) [C:/Users/Gina/Downloads/FIR_IP.vhdl:86]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 487.719 ; gain = 154.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 487.719 ; gain = 154.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 487.719 ; gain = 154.113
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-4471] merging register 'rom_addr_reg[2:0]' into 'ram_addr_reg[2:0]' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:260]
+INFO: [Synth 8-4471] merging register 'counter_reg[2:0]' into 'ram_addr_reg[2:0]' [C:/Users/Gina/Downloads/FIR_Correct.vhdl:261]
+INFO: [Synth 8-5544] ROM "rom" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 487.719 ; gain = 154.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               19 Bit    Registers := 2     
+	                8 Bit    Registers := 11    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR_IP_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module dff_big 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Control_Unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module mlab_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+Module mlab_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module MAC 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design FIR_IP_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[20]' (FDE) to 'slv_reg1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[21]' (FDE) to 'slv_reg1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[22]' (FDE) to 'slv_reg1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[23]' (FDE) to 'slv_reg1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[24]' (FDE) to 'slv_reg1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[25]' (FDE) to 'slv_reg1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[26]' (FDE) to 'slv_reg1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[27]' (FDE) to 'slv_reg1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[28]' (FDE) to 'slv_reg1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[29]' (FDE) to 'slv_reg1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'slv_reg1_reg[30]' (FDE) to 'slv_reg1_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\slv_reg1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (aw_en_reg)
+INFO: [Synth 8-3886] merging instance 'axi_rresp_reg[0]' (FDRE) to 'axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'axi_bresp_reg[0]' (FDRE) to 'axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_bresp_reg[1] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 637.441 ; gain = 303.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 637.441 ; gain = 303.836
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     3|
+|4     |LUT2   |    61|
+|5     |LUT3   |    19|
+|6     |LUT4   |    26|
+|7     |LUT5   |    25|
+|8     |LUT6   |    59|
+|9     |FDCE   |   106|
+|10    |FDPE   |     1|
+|11    |FDRE   |   192|
+|12    |FDSE   |     2|
+|13    |IBUF   |    47|
+|14    |OBUF   |    41|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-------------+------+
+|      |Instance              |Module       |Cells |
++------+----------------------+-------------+------+
+|1     |top                   |             |   591|
+|2     |  FIR_bb              |FIR          |   260|
+|3     |    control           |Control_Unit |    32|
+|4     |      valid_out_deff1 |dff2_2       |     2|
+|5     |        delay3        |dff_12       |     1|
+|6     |        delay4        |dff_13       |     1|
+|7     |      valid_out_deff2 |dff2_3       |     2|
+|8     |        delay3        |dff_10       |     1|
+|9     |        delay4        |dff_11       |     1|
+|10    |      valid_out_deff3 |dff2_4       |     2|
+|11    |        delay3        |dff_8        |     1|
+|12    |        delay4        |dff_9        |     1|
+|13    |      valid_out_deff4 |dff2_5       |     2|
+|14    |        delay3        |dff_6        |     1|
+|15    |        delay4        |dff_7        |     1|
+|16    |    mac_init_reg      |dff          |     1|
+|17    |    macc              |MAC          |    77|
+|18    |    ram               |mlab_ram     |   106|
+|19    |    rom               |mlab_rom     |    31|
+|20    |    valid_out_reg     |dff2         |     5|
+|21    |      delay3          |dff_0        |     1|
+|22    |      delay4          |dff_1        |     4|
+|23    |    x_reg             |dff_big      |     8|
++------+----------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 637.449 ; gain = 303.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 735.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 735.516 ; gain = 414.367
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 735.516 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+ERROR: [Common 17-69] Command failed: Failed to create design checkpoint
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 23 14:48:43 2024...

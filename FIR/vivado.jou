@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 17 10:53:13 2024
+# Process ID: 18856
+# Current directory: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16960 C:\Users\Gina\OneDrive\Desktop\DVLSI\Lab 4\lab4_solved2\lab4_solved2.xpr
+# Log file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/vivado.log
+# Journal file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/lab4_solved2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_tb.tcl
+save_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_tb.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_tb.tcl
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+close_sim
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR_Test.tcl
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 4/lab4_solved2/FIR_tb_behav.wcfg}
+source FIR.tcl
+close_sim
+current_sim simulation_10
+close_sim
+close_sim
