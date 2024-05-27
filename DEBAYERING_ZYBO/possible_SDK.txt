@@ -1,0 +1,272 @@
+#include <stdio.h>
+#include <unistd.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xparameters_ps.h"
+#include "xaxidma.h"
+#include "xtime_l.h"
+
+#define TX_DMA_ID XPAR_PS2PL_DMA_DEVICE_ID 							//PS to PL
+#define TX_DMA_MM2S_LENGTH_ADDR (XPAR_PS2PL_DMA_BASEADDR + 0x28) 	// Reports actual number of bytes transfERRORed from PS->PL (use Xil_In32 for report)
+
+#define RX_DMA_ID XPAR_PL2PS_DMA_DEVICE_ID 							//PL to PS
+#define RX_DMA_S2MM_LENGTH_ADDR (XPAR_PL2PS_DMA_BASEADDR + 0x58) 	// Reports actual number of bytes transfERRORed from PL->PS (use Xil_In32 for report)
+
+#define TX_BUFFER (XPAR_DDR_MEM_BASEADDR + 0x10000000) 				// 0 + 256MByte
+#define RX_BUFFER (XPAR_DDR_MEM_BASEADDR + 0x18000000) 				// 0 + 384MByte
+
+/* User application global variables & defines */
+
+#define N 0x20
+#define IMG_LEN 0x400 										//(N*N)
+
+/* Device instance definitions*/
+XAxiDma TXAxiDma; //PS2PL DMA Engine
+XAxiDma RXAxiDma; //PL2PS DMA Engine
+
+unsigned char pixels[IMG_LEN];
+
+void generateRandomPixels() {
+    for (int i = 0; i < IMG_LEN; i++) {
+        pixels[i] = rand() % 256; // Generate random number between 0 and 255
+    }
+}
+
+
+int main(){
+
+    Xil_DCacheDisable();
+
+    XTime preExecCyclesFPGA = 0;
+    XTime postExecCyclesFPGA = 0;
+    XTime preExecCyclesSW = 0;
+    XTime postExecCyclesSW = 0;
+
+    print("HELLO : Start of the Program Complete\r\n");
+
+    // User application local variables
+    init_platform();
+
+    /**************************DEVICE INITIALIZATION******************************/
+    u8 *TxPtr;
+    u32 *RxPtr;
+    int State;
+
+    TxPtr = (u8 *)TX_BUFFER; 					//8bit data to accelerator
+    RxPtr = (u32 *)RX_BUFFER; 					//32bit data from accelerator
+
+    // Step 1: Initialize TX-DMA Device (PS->PL)
+
+    /* Configure & Initialize PS2PL */
+
+    XAxiDma_Config *TXConfigPtr;
+
+    int TXState;
+    TXConfigPtr = XAxiDma_LookupConfig(TX_DMA_ID);
+    if (!TXConfigPtr)
+    {
+        xil_printf("No Configuration found for %d\r\n", TX_DMA_ID);
+        return XST_FAILURE;
+    }
+
+    TXState = XAxiDma_CfgInitialize(&TXAxiDma, TXConfigPtr);
+
+    if (TXState != XST_SUCCESS)
+    {
+        xil_printf("Initialization Failed %d\r\n", TXState);
+        return XST_FAILURE;
+    }
+
+    XAxiDma_IntrDisable(&TXAxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);		// Disable intERRORupts, we use polling mode
+    XAxiDma_IntrDisable(&TXAxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+
+    // Step 2: Initialize RX-DMA Device (PL->PS)
+    /* Configure & Initialize PS2PL */
+
+    XAxiDma_Config *RXConfigPtr;
+    int RXState;
+
+    RXConfigPtr = XAxiDma_LookupConfig(RX_DMA_ID);
+    if (!RXConfigPtr)
+    {
+        xil_printf("No Configuration found for %d\r\n", RX_DMA_ID);
+        return XST_FAILURE;
+    }
+
+    RXState = XAxiDma_CfgInitialize(&RXAxiDma, RXConfigPtr);
+
+    if (RXState != XST_SUCCESS){
+        xil_printf("Initialization failed %d\r\n", RXState);
+        return XST_FAILURE;
+    }
+
+    XAxiDma_IntrDisable(&RXAxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);		// Disable intERRORupts, we use polling mode
+    XAxiDma_IntrDisable(&RXAxiDma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+    print("Initialization DMA Complete\r\n");
+
+    
+	generateRandomPixels();
+
+	for(int i = 0; i < IMG_LEN; i ++){ //Data to accelerator
+
+        TxPtr[i] = pixels[i];
+//        printf("%d\n", i);
+    }
+
+    for(int i = 0; i < 10; i ++){
+
+        RxPtr[i] = i;
+    }
+
+    /*****************************************************************************/
+    print("Data Acquisition Complete\r\n");
+
+    XTime_GetTime(&preExecCyclesFPGA);
+
+    int sent, received = 0;
+//    for(int i = 0; i < 10; i++)
+//        printf("%lu \n",(unsigned long)RxPtr[i]);
+
+    // Step 3 : Perform FPGA processing
+    // 3a: Setup RX-DMA transaction
+
+    State = XAxiDma_SimpleTransfer(&RXAxiDma,(UINTPTR) RxPtr,
+                                        IMG_LEN*4, XAXIDMA_DEVICE_TO_DMA);
+    if (State != XST_SUCCESS)
+    {
+        return XST_FAILURE;
+    }
+    print("Setup RX-DMA transaction Complete\r\n");
+
+    // 3b: Setup TX-DMA transaction
+    State = XAxiDma_SimpleTransfer(&TXAxiDma,(UINTPTR) TxPtr,
+                                        IMG_LEN, XAXIDMA_DMA_TO_DEVICE);
+    if (State != XST_SUCCESS)
+    {
+        return XST_FAILURE;
+    }
+    print("Setup TX-DMA transaction Complete\r\n");
+
+    // 3c: Wait for TX-DMA & RX-DMA to finish
+
+    sleep(5);
+    sent = Xil_In32(TX_DMA_MM2S_LENGTH_ADDR);
+    received = Xil_In32(RX_DMA_S2MM_LENGTH_ADDR);
+
+    // Expecting sent == N*N && received == N*N*4
+    printf("Sent = %d, Received = %d \n", sent, received);
+
+    if (XAxiDma_Busy(&RXAxiDma,XAXIDMA_DEVICE_TO_DMA)) print("RX DEVICE -> DMA WAITING...\r\n");
+    if (XAxiDma_Busy(&RXAxiDma,XAXIDMA_DMA_TO_DEVICE)) print("RX DMA -> DEVICE WAITING...\r\n");
+    if (XAxiDma_Busy(&TXAxiDma,XAXIDMA_DEVICE_TO_DMA)) print("TX DEVICE -> DMA WAITING...\r\n");
+    if (XAxiDma_Busy(&TXAxiDma,XAXIDMA_DMA_TO_DEVICE)) print("TX DMA -> DEVICE WAITING...\r\n");
+
+//    for(int i = 0; i < 10; i++)
+//        printf("%lu \n",(unsigned long)RxPtr[i]);
+
+    XTime_GetTime(&postExecCyclesFPGA);
+
+    /*****************************************************************************/
+    print("RX-DMA and TX-DMA Complete\r\n");
+
+    XTime_GetTime(&preExecCyclesSW);
+
+    // Step 5: Perform SW processing
+
+    int *RED_SW = (int *)malloc(N*N*sizeof(int));
+    int *GREEN_SW = (int *)malloc(N*N*sizeof(int));
+    int *BLUE_SW = (int *)malloc(N*N*sizeof(int));
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < N; j++)
+        {
+            int r = (j < N - 1) ? (j + 1) : 0;
+            int l = (j > 0) ? (j - 1) : 0;
+            int u = (i > 0) ? (i - 1) : 0;
+            int d = (i < N - 1) ? (i + 1) : 0;
+            int right = (j < N - 1) ? pixels[r + N * i] : 0;
+            int left = (j > 0) ? pixels[i * N + l] : 0;
+            int up = (i > 0) ? pixels[u * N + j] : 0;
+            int down = (i < N - 1) ? pixels[d * N + j] : 0;
+            int upleft = ((i > 0) && (j > 0)) ? pixels[u * N + l] : 0;
+            int upright = ((i > 0) && j < (N - 1)) ? pixels[u * N + r] : 0;
+            int downleft = ((i < N - 1) && (j > 0)) ? pixels[d * N + l] : 0;
+            int downright = ((i < N - 1) && (j < N - 1)) ? pixels[d * N + r] : 0;
+            int x = pixels[i*N+j];
+            if (i % 2)
+            {
+                if (j % 2)
+                { //green
+                    RED_SW[i*N+j] = (right + left) / 2;
+                    GREEN_SW[i*N+j] = x;
+                    BLUE_SW[i*N+j] = (up + down) / 2;
+                }
+                else
+                { //red
+                    RED_SW[i*N+j] = x;
+                    GREEN_SW[i*N+j] = (up + down + right + left) / 4;
+                    BLUE_SW[i*N+j] = (upleft + upright + downleft + downright) / 4 ;
+                }
+            }
+            else
+            {
+                if (j % 2)
+                { //blue
+                    RED_SW[i*N+j] = (upleft + upright + downleft + downright) / 4;
+                    GREEN_SW[i*N+j] = (up + down + right + left) / 4;
+                    BLUE_SW[i*N+j] = x;
+                }
+                else
+                { //green
+                    RED_SW[i*N+j] = (up + down) / 2;
+                    GREEN_SW[i*N+j] = x;
+                    BLUE_SW[i*N+j] = (right + left) / 2 ;
+                }
+            }
+        }
+    }
+    print("Software Pixel Calculation Complete\r\n");
+    XTime_GetTime(&postExecCyclesSW);
+
+    /*****************************************************************************/
+    // Step 6: Compare FPGA and SW results
+
+    int *RED_HW = (int *)malloc(N*N*sizeof(int));
+    int *GREEN_HW = (int *)malloc(N*N*sizeof(int));
+    int *BLUE_HW = (int *)malloc(N*N*sizeof(int));
+    int ERROR = 0;
+    float percentage_error, FPGA_cycles, SW_cycles, speedup;
+
+
+
+    for (int i = 0; i < IMG_LEN; i++)
+    {
+        RED_HW[i] = RxPtr[i] & 0x0000ff;
+        GREEN_HW[i] = (RxPtr[i] & 0x00ff00) >> 2;
+        BLUE_HW[i] = (RxPtr[i] & 0xff0000) >> 4;
+        if (RED_HW[i] == RED_SW[i] && GREEN_HW[i] == GREEN_SW[i] && BLUE_HW[i] == BLUE_SW[i]) continue;
+        else ERROR++;
+    }
+
+    // 6a: Report total percentage Error
+    percentage_error = ((float)ERROR / IMG_LEN) * 100.0f; // Cast ERROR to float
+    printf("Total Percentage Error: %.5f %% \n", percentage_error); // %.5f for 5 decimal places
+
+    // 6b: Report FPGA execution time in cycles (use preExecCyclesFPGA and postExecCyclesFPGA)
+    FPGA_cycles = (float)(postExecCyclesFPGA - preExecCyclesFPGA); // Cast to float
+    printf("FPGA execution time in cycles: %f \n", FPGA_cycles);
+
+    // 6c: Report SW execution time in cycles (use preExecCyclesSW and postExecCyclesSW)
+    SW_cycles = (float)(postExecCyclesSW - preExecCyclesSW); // Cast to float
+    printf("SW execution time in cycles: %f \n", SW_cycles);
+
+    // 6d: Report speedup (SW_execution_time / FPGA_exection_time)
+    speedup = SW_cycles / FPGA_cycles;
+    printf("Speedup: %.5f \n", speedup);
+
+    printf("END\r\n");
+    printf("\n");
+    cleanup_platform();
+
+}
