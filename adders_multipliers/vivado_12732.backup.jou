@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Apr  9 00:45:15 2024
+# Process ID: 12732
+# Current directory: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 C:\Users\Gina\OneDrive\Desktop\DVLSI\Lab 3\synchronous_FA_MUL\adders_mulyipliers\adders_mulyipliers.xpr
+# Log file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/vivado.log
+# Journal file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.xpr}
+update_compile_order -fileset sources_1

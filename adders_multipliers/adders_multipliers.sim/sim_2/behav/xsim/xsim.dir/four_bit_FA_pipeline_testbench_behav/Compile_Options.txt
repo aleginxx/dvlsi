@@ -1,0 +1,1 @@
+-wto "02f1ac75163840e0a60b5cc603a7aac5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "four_bit_FA_pipeline_testbench_behav" "xil_defaultlib.four_bit_FA_pipeline_testbench" -log "elaborate.log" 

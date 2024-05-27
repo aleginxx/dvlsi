@@ -1,0 +1,434 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Apr  8 23:36:16 2024
+# Process ID: 19076
+# Current directory: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.runs/synth_1
+# Command line: vivado.exe -log mult_4bit_pipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mult_4bit_pipeline.tcl
+# Log file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.runs/synth_1/mult_4bit_pipeline.vds
+# Journal file: C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mult_4bit_pipeline.tcl -notrace
+Command: synth_design -top mult_4bit_pipeline -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18604 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 431.211 ; gain = 97.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mult_4bit_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:13]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FIRST_ROW_FIRST' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:18]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dff_horizontal' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'dff' (1#1) [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:12]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dff_diagonal_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:43]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dff_diagonal_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:44]
+INFO: [Synth 8-3491] module 'full_adder_bh' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_bh.vhd:5' bound to instance 'dff_adder' of component 'full_adder_bh' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'full_adder_bh' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_bh.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'full_adder_bh' (2#1) [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_bh.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'full_adder_sys_pipeline' (3#1) [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:18]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA1_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:61]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FIRST_ROW_SECOND' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:63]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA2_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:65]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA2_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:66]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FIRST_ROW_THIRD' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:68]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA3_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:70]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA3_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:71]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffA3_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:72]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FIRST_ROW_FOURTH' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:74]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffCoutFirstRow' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:76]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:78]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:79]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:80]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_3' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:81]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_4' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:82]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_5' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:83]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_6' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:84]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_7' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:85]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP0_8' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:86]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB1_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:88]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB1_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:89]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'SECOND_ROW_FIRST' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:91]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'SECOND_ROW_SECOND' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:92]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'SECOND_ROW_THIRD' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:93]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'SECOND_ROW_FOURTH' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:94]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffCoutSecondRow' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:96]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:98]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:99]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:100]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_3' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:101]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_4' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:102]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_5' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:103]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP1_6' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:104]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB2_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:106]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB2_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:107]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB2_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:108]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB2_3' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:109]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'THIRD_ROW_FIRST' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:111]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'THIRD_ROW_SECOND' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:112]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'THIRD_ROW_THIRD' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:113]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'THIRD_ROW_FOURTH' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:114]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffCoutThirdRow' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:116]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP2_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:118]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP2_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:119]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP2_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:120]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP2_3' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:121]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP2_4' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:122]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:124]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:125]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:126]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_3' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:127]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_4' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:128]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffB3_5' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:129]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FOURTH_ROW_FIRST' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:131]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP3_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:133]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP3_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:134]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP3_2' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:135]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FOURTH_ROW_SECOND' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:137]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP4_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:139]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP4_1' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:140]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FOURTH_ROW_THIRD' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:142]
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/register.vhd:5' bound to instance 'dffP5_0' of component 'dff' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:144]
+INFO: [Synth 8-3491] module 'full_adder_sys_pipeline' declared at 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/full_adder_sys_pipeline.vhd:5' bound to instance 'FOURTH_ROW_FOURTH' of component 'full_adder_sys_pipeline' [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'mult_4bit_pipeline' (4#1) [C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.srcs/sources_1/new/mul_4bit_pipeline.vhd:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 487.160 ; gain = 152.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 487.160 ; gain = 152.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 487.160 ; gain = 152.957
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 487.160 ; gain = 152.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module full_adder_bh 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\FIRST_ROW_FIRST/dff_adder/cout_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 619.574 ; gain = 285.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 619.574 ; gain = 285.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mult_4bit_pipeline | dffP0_8/Q_reg | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mult_4bit_pipeline | dffP1_6/Q_reg | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mult_4bit_pipeline | dffP2_4/Q_reg | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mult_4bit_pipeline | dffP3_2/Q_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mult_4bit_pipeline | dffB2_3/Q_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|mult_4bit_pipeline | dffB3_5/Q_reg | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------------+---------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT1   |     1|
+|3     |LUT2   |    10|
+|4     |LUT3   |     8|
+|5     |LUT4   |    16|
+|6     |SRL16E |     6|
+|7     |FDCE   |    88|
+|8     |FDRE   |     6|
+|9     |IBUF   |    10|
+|10    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+---------------------------+------+
+|      |Instance            |Module                     |Cells |
++------+--------------------+---------------------------+------+
+|1     |top                 |                           |   154|
+|2     |  FIRST_ROW_FIRST   |full_adder_sys_pipeline    |     5|
+|3     |    dff_adder       |full_adder_bh_98           |     1|
+|4     |    dff_diagonal_1  |dff_99                     |     1|
+|5     |    dff_diagonal_2  |dff_100                    |     2|
+|6     |    dff_horizontal  |dff_101                    |     1|
+|7     |  FIRST_ROW_FOURTH  |full_adder_sys_pipeline_0  |     3|
+|8     |    dff_adder       |full_adder_bh_95           |     1|
+|9     |    dff_diagonal_1  |dff_96                     |     1|
+|10    |    dff_diagonal_2  |dff_97                     |     1|
+|11    |  FIRST_ROW_SECOND  |full_adder_sys_pipeline_1  |     4|
+|12    |    dff_adder       |full_adder_bh_91           |     1|
+|13    |    dff_diagonal_1  |dff_92                     |     1|
+|14    |    dff_diagonal_2  |dff_93                     |     1|
+|15    |    dff_horizontal  |dff_94                     |     1|
+|16    |  FIRST_ROW_THIRD   |full_adder_sys_pipeline_2  |     4|
+|17    |    dff_adder       |full_adder_bh_87           |     1|
+|18    |    dff_diagonal_1  |dff_88                     |     1|
+|19    |    dff_diagonal_2  |dff_89                     |     1|
+|20    |    dff_horizontal  |dff_90                     |     1|
+|21    |  FOURTH_ROW_FIRST  |full_adder_sys_pipeline_3  |     2|
+|22    |    dff_adder       |full_adder_bh_85           |     1|
+|23    |    dff_horizontal  |dff_86                     |     1|
+|24    |  FOURTH_ROW_FOURTH |full_adder_sys_pipeline_4  |     4|
+|25    |    dff_adder       |full_adder_bh_84           |     4|
+|26    |  FOURTH_ROW_SECOND |full_adder_sys_pipeline_5  |     5|
+|27    |    dff_adder       |full_adder_bh_82           |     4|
+|28    |    dff_horizontal  |dff_83                     |     1|
+|29    |  FOURTH_ROW_THIRD  |full_adder_sys_pipeline_6  |     5|
+|30    |    dff_adder       |full_adder_bh_80           |     4|
+|31    |    dff_horizontal  |dff_81                     |     1|
+|32    |  SECOND_ROW_FIRST  |full_adder_sys_pipeline_7  |     5|
+|33    |    dff_adder       |full_adder_bh_76           |     1|
+|34    |    dff_diagonal_1  |dff_77                     |     1|
+|35    |    dff_diagonal_2  |dff_78                     |     2|
+|36    |    dff_horizontal  |dff_79                     |     1|
+|37    |  SECOND_ROW_FOURTH |full_adder_sys_pipeline_8  |     4|
+|38    |    dff_adder       |full_adder_bh_73           |     2|
+|39    |    dff_diagonal_1  |dff_74                     |     1|
+|40    |    dff_diagonal_2  |dff_75                     |     1|
+|41    |  SECOND_ROW_SECOND |full_adder_sys_pipeline_9  |     7|
+|42    |    dff_adder       |full_adder_bh_69           |     4|
+|43    |    dff_diagonal_1  |dff_70                     |     1|
+|44    |    dff_diagonal_2  |dff_71                     |     1|
+|45    |    dff_horizontal  |dff_72                     |     1|
+|46    |  SECOND_ROW_THIRD  |full_adder_sys_pipeline_10 |     9|
+|47    |    dff_adder       |full_adder_bh_65           |     4|
+|48    |    dff_diagonal_1  |dff_66                     |     1|
+|49    |    dff_diagonal_2  |dff_67                     |     1|
+|50    |    dff_horizontal  |dff_68                     |     3|
+|51    |  THIRD_ROW_FIRST   |full_adder_sys_pipeline_11 |     5|
+|52    |    dff_adder       |full_adder_bh_61           |     1|
+|53    |    dff_diagonal_1  |dff_62                     |     1|
+|54    |    dff_diagonal_2  |dff_63                     |     2|
+|55    |    dff_horizontal  |dff_64                     |     1|
+|56    |  THIRD_ROW_FOURTH  |full_adder_sys_pipeline_12 |     6|
+|57    |    dff_adder       |full_adder_bh_58           |     4|
+|58    |    dff_diagonal_1  |dff_59                     |     1|
+|59    |    dff_diagonal_2  |dff_60                     |     1|
+|60    |  THIRD_ROW_SECOND  |full_adder_sys_pipeline_13 |     7|
+|61    |    dff_adder       |full_adder_bh_54           |     4|
+|62    |    dff_diagonal_1  |dff_55                     |     1|
+|63    |    dff_diagonal_2  |dff_56                     |     1|
+|64    |    dff_horizontal  |dff_57                     |     1|
+|65    |  THIRD_ROW_THIRD   |full_adder_sys_pipeline_14 |     8|
+|66    |    dff_adder       |full_adder_bh              |     5|
+|67    |    dff_diagonal_1  |dff_51                     |     1|
+|68    |    dff_diagonal_2  |dff_52                     |     1|
+|69    |    dff_horizontal  |dff_53                     |     1|
+|70    |  dffA1_0           |dff                        |     2|
+|71    |  dffA2_0           |dff_15                     |     1|
+|72    |  dffA2_1           |dff_16                     |     2|
+|73    |  dffA3_0           |dff_17                     |     1|
+|74    |  dffA3_1           |dff_18                     |     1|
+|75    |  dffA3_2           |dff_19                     |     2|
+|76    |  dffB1_0           |dff_20                     |     1|
+|77    |  dffB1_1           |dff_21                     |     2|
+|78    |  dffB2_1           |dff_22                     |     1|
+|79    |  dffB2_2           |dff_23                     |     2|
+|80    |  dffB2_3           |dff_24                     |     2|
+|81    |  dffB3_3           |dff_25                     |     1|
+|82    |  dffB3_4           |dff_26                     |     2|
+|83    |  dffB3_5           |dff_27                     |     2|
+|84    |  dffCoutSecondRow  |dff_28                     |     1|
+|85    |  dffCoutThirdRow   |dff_29                     |     1|
+|86    |  dffP0_0           |dff_30                     |     1|
+|87    |  dffP0_1           |dff_31                     |     1|
+|88    |  dffP0_2           |dff_32                     |     1|
+|89    |  dffP0_3           |dff_33                     |     1|
+|90    |  dffP0_4           |dff_34                     |     1|
+|91    |  dffP0_5           |dff_35                     |     1|
+|92    |  dffP0_6           |dff_36                     |     3|
+|93    |  dffP0_7           |dff_37                     |     3|
+|94    |  dffP0_8           |dff_38                     |     1|
+|95    |  dffP1_4           |dff_39                     |     1|
+|96    |  dffP1_5           |dff_40                     |     2|
+|97    |  dffP1_6           |dff_41                     |     1|
+|98    |  dffP2_2           |dff_42                     |     1|
+|99    |  dffP2_3           |dff_43                     |     2|
+|100   |  dffP2_4           |dff_44                     |     1|
+|101   |  dffP3_0           |dff_45                     |     1|
+|102   |  dffP3_1           |dff_46                     |     2|
+|103   |  dffP3_2           |dff_47                     |     1|
+|104   |  dffP4_0           |dff_48                     |     1|
+|105   |  dffP4_1           |dff_49                     |     1|
+|106   |  dffP5_0           |dff_50                     |     1|
++------+--------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 620.176 ; gain = 285.973
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 734.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 734.836 ; gain = 412.527
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 734.836 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Gina/OneDrive/Desktop/DVLSI/Lab 3/synchronous_FA_MUL/adders_mulyipliers/adders_mulyipliers.runs/synth_1/mult_4bit_pipeline.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mult_4bit_pipeline_utilization_synth.rpt -pb mult_4bit_pipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 23:36:42 2024...
